@@ -52,11 +52,24 @@
                     </div>
                 </div>
                 <!-- Div al centro-->
-                <div class="m-auto"> 
-                    <a class="navbar-brand" href="#"> Brand </a>   
+                <div class="m-auto">
+                    <a class="navbar-brand"> <i class="fa-solid fa-music"></i> </a>
                 </div>
                 <!-- Div di destra-->
-                <div class="ml-auto"> immagine di profilo </div>
+                <!--immagine di profilo dentro a bottone dropdown-->
+                <div class="ml-auto">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="profilo.html">Profilo personale</a></li>
+                            <li><a class="dropdown-item" href="#">I miei concerti</a></li>
+                            <li><a class="dropdown-item" href="#">Esci</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div> 
         </nav>
         <!-- Javascript Bootstrap-->
