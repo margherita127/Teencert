@@ -11,6 +11,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -80,6 +84,31 @@
             </div>
         </div>
     </nav>
+    <!--Modal-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Immagine Parallax-->
     <div id="parallax" class="justify-content-center d-flex align-items-center">
@@ -87,9 +116,9 @@
         <div class="d-flex flex-column">
             <h1 class="text-white">A quale concerto vuoi andare?</h1>
             <!--Barra di ricerca-->
-            <form class="d-flex justify-content-center"> 
+            <form class="d-flex justify-content-center">
                 <input class="form-control me-2" type="search" placeholder="Artista" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Cerca</button> 
+                <button class="btn btn-outline-light" type="submit">Cerca</button>
             </form>
             <div class="d-flex justify-content-center">
                 <h5 class="me-1 text-white">Non sei ancora iscritto?</h5>
@@ -98,12 +127,16 @@
         </div>
     </div>
 
-    <!--Div bianco sotto l'immagine-->
-    <div style="height:1000px; background-color:white; font-size:20px; margin-left: 200px; margin-right: 200px; margin-top: 30px;">
-        <p class="text-center">Non hai nessuno con cui andare al concerto? Vuoi fare nuove amicizie? Hai i biglietti per la tua band preferita ma il tuo amico si è ammalato? 
-        Allora sei nel posto giusto! Teencert ti permette di conoscere persone nuove con cui condividere l'emozione di un concerto.
-        Cerca il tuo artista o band preferita e chatta con ragazzi e ragazze che vogliono andare allo stesso concerto, nuove amicizie garantite!   
-        (Tutti abbiamo quell'artista o quella band di cui siamo fan sfegatati ma che non piace a nessun amico)</p>
+    <!--Div sotto l'immagine-->
+    <div
+        style="height:1000px; background-color:rgb(237, 237, 237); font-family: 'Raleway', sans-serif; font-size:20px; margin-left: 200px; margin-right: 200px; margin-top: 30px;">
+        <p class="text-center">Non hai nessuno con cui andare al concerto? Vuoi fare nuove amicizie? Hai i biglietti per
+            la tua band preferita ma il tuo amico si è ammalato?
+            Allora sei nel posto giusto! Teencert ti permette di conoscere persone nuove con cui condividere l'emozione
+            di un concerto.
+            Cerca il tuo artista o band preferita e chatta con ragazzi e ragazze che vogliono andare allo stesso
+            concerto, nuove amicizie garantite!
+            (Tutti abbiamo quell'artista o quella band di cui siamo fan sfegatati ma che non piace a nessun amico)</p>
     </div>
 
     <!-- Javascript Bootstrap-->

@@ -3,6 +3,7 @@ body, html {
 }
 body {
     padding-top: 50px;
+    background-color: rgb(237, 237, 237);
 }
 #parallax {
     /* The image used */
@@ -14,4 +15,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+nav {
+    font-family: 'Raleway', sans-serif;
+}
+#parallax {
+    font-family: 'Raleway', sans-serif;
 }
