@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="images/logo.png" />
+    <!-- Title -->
+    <title>Teencert</title>
 </head>
 
 <body>
@@ -65,7 +69,7 @@
             </div>
             <!-- Div Logo al centro-->
             <div id="logo-base" class="m-auto">
-                <a class="navbar-brand"> <img src="file:///Users/margheritamariani/Desktop/informatica_umanistica/sito%20esame/images/logo.png"> </a>
+                <a class="navbar-brand"> <img src="images/logo.png"> </a>
             </div>
             <!-- Div di destra-->
             <!--icona user dentro a bottone dropdown-->
@@ -109,7 +113,7 @@
             Allora sei nel posto giusto!
         </p>
         <p class="text-center">
-            A tutti è capitato almeno una volta nella vita di voler assolutamente partecipare ad un concerto ma non c'era nessuno ad accompagnarvi, ebbene Teencert ti permette di conoscere persone nuove con cui condividere quell'emozione unica. Inizia subito la ricerca!
+            A tutti è capitato almeno una volta nella vita di voler assolutamente partecipare ad un concerto ma non c'era nessuno ad accompagnarti, Teencert ti permette di conoscere persone nuove con cui condividere quell'emozione unica. Inizia subito la ricerca!
         </p>
 
         <!--Carosello Foto-->
@@ -123,11 +127,11 @@
                 
                 <div class="carousel-item">
                     <img
-                        src="file:///Users/margheritamariani/Desktop/informatica_umanistica/sito%20esame/images/concerto10.jpeg" alt="stadio in cui si tiene il concerto illuminato da luci viola">
+                        src="https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470" alt="stadio in cui si tiene il concerto illuminato da luci viola">
                 </div>
                 <div class="carousel-item">
                     <img
-                        src="file:///Users/margheritamariani/Desktop/informatica_umanistica/sito%20esame/images/concerto11.jpeg" alt="palcoscenico e coriandoli colorati">
+                        src="https://images.unsplash.com/photo-1582711012124-a56cf82307a0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1540">
                 </div>
                 <div class="carousel-item">
                     <img
@@ -259,7 +263,20 @@
     <!-- Javascript Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
+    <script>
+        //se non esiste session-storage.first_load
+        if (window.sessionStorage.first_load_model === undefined) {
+            //trovo il modal tramite id
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+                keyboard: false
+            })
+            //mostro il modal
+            myModal.show();
+            //aggiungo il valore a session-storage
+            window.sessionStorage.first_load_model = true
+        }
+    </script>
 </body>
 
 </html>
