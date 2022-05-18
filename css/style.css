@@ -46,3 +46,14 @@ footer {
     height: 100%;
     object-fit: cover;
 }
+#logo-base {
+width: 50px; /* Your chosen height */
+height: auto; /* Must be auto */
+}
+
+   /* Logo image CSS */
+
+#logo-base img {
+width: 100%; /* Must be 100% */
+height: auto; /* Must be auto */
+}
